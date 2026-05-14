@@ -1,0 +1,52 @@
+/**
+* @license
+*
+* Font Family: Zodiak
+* Designed by: Jérémie Hornus, Gaetan Baehr, Jean-Baptiste Morizot, Alisa Nowak, Theo Guillard
+* URL: https://www.fontshare.com/fonts/zodiak
+* © 2026 Indian Type Foundry
+*
+* Zodiak Thin 
+* Zodiak Light 
+* Zodiak Regular 
+* Zodiak Bold 
+
+*
+*/
+@font-face {
+  font-family: 'Zodiak-Thin';
+  src: url('../fonts/Zodiak-Thin.woff2') format('woff2'),
+       url('../fonts/Zodiak-Thin.woff') format('woff'),
+       url('../fonts/Zodiak-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Zodiak-Light';
+  src: url('../fonts/Zodiak-Light.woff2') format('woff2'),
+       url('../fonts/Zodiak-Light.woff') format('woff'),
+       url('../fonts/Zodiak-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Zodiak-Regular';
+  src: url('../fonts/Zodiak-Regular.woff2') format('woff2'),
+       url('../fonts/Zodiak-Regular.woff') format('woff'),
+       url('../fonts/Zodiak-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Zodiak-Bold';
+  src: url('../fonts/Zodiak-Bold.woff2') format('woff2'),
+       url('../fonts/Zodiak-Bold.woff') format('woff'),
+       url('../fonts/Zodiak-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+

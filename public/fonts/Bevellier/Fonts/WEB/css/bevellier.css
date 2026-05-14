@@ -1,0 +1,92 @@
+/**
+* @license
+*
+* Font Family: Bevellier
+* Designed by: Arya Purohit, Barbara Bigosinska
+* URL: https://www.fontshare.com/fonts/bevellier
+* © 2026 Indian Type Foundry
+*
+* Bevellier Medium 
+* Bevellier MediumItalic 
+* Bevellier Semibold 
+* Bevellier SemiboldItalic 
+* Bevellier Bold 
+* Bevellier BoldItalic 
+* Bevellier Black 
+* Bevellier BlackItalic 
+
+*
+*/
+@font-face {
+  font-family: 'Bevellier-Medium';
+  src: url('../fonts/Bevellier-Medium.woff2') format('woff2'),
+       url('../fonts/Bevellier-Medium.woff') format('woff'),
+       url('../fonts/Bevellier-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bevellier-MediumItalic';
+  src: url('../fonts/Bevellier-MediumItalic.woff2') format('woff2'),
+       url('../fonts/Bevellier-MediumItalic.woff') format('woff'),
+       url('../fonts/Bevellier-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Bevellier-Semibold';
+  src: url('../fonts/Bevellier-Semibold.woff2') format('woff2'),
+       url('../fonts/Bevellier-Semibold.woff') format('woff'),
+       url('../fonts/Bevellier-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bevellier-SemiboldItalic';
+  src: url('../fonts/Bevellier-SemiboldItalic.woff2') format('woff2'),
+       url('../fonts/Bevellier-SemiboldItalic.woff') format('woff'),
+       url('../fonts/Bevellier-SemiboldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Bevellier-Bold';
+  src: url('../fonts/Bevellier-Bold.woff2') format('woff2'),
+       url('../fonts/Bevellier-Bold.woff') format('woff'),
+       url('../fonts/Bevellier-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bevellier-BoldItalic';
+  src: url('../fonts/Bevellier-BoldItalic.woff2') format('woff2'),
+       url('../fonts/Bevellier-BoldItalic.woff') format('woff'),
+       url('../fonts/Bevellier-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Bevellier-Black';
+  src: url('../fonts/Bevellier-Black.woff2') format('woff2'),
+       url('../fonts/Bevellier-Black.woff') format('woff'),
+       url('../fonts/Bevellier-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bevellier-BlackItalic';
+  src: url('../fonts/Bevellier-BlackItalic.woff2') format('woff2'),
+       url('../fonts/Bevellier-BlackItalic.woff') format('woff'),
+       url('../fonts/Bevellier-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+

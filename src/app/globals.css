@@ -1,3 +1,5 @@
+@import url("https://api.fontshare.com/v2/css?f[]=bevellier@500,501,600,601,700,701,900,901&f[]=nippo@200,300,500,700&f[]=switzer@300,400,500,600,700,800,900&f[]=zodiak@100,300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -8,8 +10,19 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-third: #1c1a11;
+  --color-text: #b1a781;
+  --color-fourth: #b1a781;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-poopin: "Poppins", sans-serif;
+  --font-Bevellier: "Bevellier", serif;
+  --font-nippo: "Nippo", sans-serif;
+  --font-Switzer: "Switzer", sans-serif;
+  --font-Playfair: "Playfair Display", serif;
+  --font-Zodiak: "Zodiak", serif;
+  --font-heading: "Nippo", serif;
+  --font-secondary: "Arial", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +35,23 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: var(--font-Bevellier); */
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.noise-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.noise-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.14;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  background-repeat: repeat;
 }
