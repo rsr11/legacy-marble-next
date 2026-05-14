@@ -8,6 +8,7 @@ import Category from "../sections/Category"
 import HeroSection from "../sections/HeroSection"
 import { HoverImageLinks } from "../sections/HoverImageLink"
 import OurTeam from "../sections/OurTeam"
+import { Analytics } from "@vercel/analytics/next"
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
       <HoverImageLinks/>
       <OurTeam/>
       <Footer/>
+      <Analytics />
     </main>
   )
 }
