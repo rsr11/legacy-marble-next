@@ -1,7 +1,5 @@
-'use client';
 
 import Footer from "../components/Footer";
-import Logo from "../components/Logo";
 import Navbar from "../components/Navbar";
 
 const Section = ({ title, children }) => (

@@ -1,4 +1,5 @@
-'use client';
+
+import Image from "next/image";
 
 /**
  * ImageNoise — wraps an image and adds a precise noise overlay.
@@ -31,9 +32,11 @@ export default function ImageNoise({
 
       {/* image */}
       {src && (
-        <img
+        <Image
           src={src}
           alt={alt}
+          height={280}
+          width={224}
           className={`w-full h-full object-cover block ${imgClassName}`}
         />
       )}
