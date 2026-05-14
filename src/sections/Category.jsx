@@ -12,12 +12,12 @@ import Link from 'next/link'
 gsap.registerPlugin(ScrollTrigger, SplitText)
 
 const ALL_IMAGES = [
-  { src: './images/fountain-cover.jpeg',    alt: 'Fountain',    category: 'Fountain', link:"fountain"    },
-  { src: './images/mini-temple-cover.jpeg', alt: 'Mini Temple', category: 'Mini Temple', link:"temple" },
-  { src: './images/pot-cover.jpeg',         alt: 'Flower Pot',  category: 'Flower Pots', link:"flower-pot" },
-  { src: './images/wash-vessal.jpg',   alt: 'Pedestal Vessal',  category: 'Pedestal Vessal', link:"pedestal-basin"},
+  { src: '/images/fountain-cover.jpeg',    alt: 'Fountain',    category: 'Fountain', link:"fountain"    },
+  { src: '/images/mini-temple-cover.jpeg', alt: 'Mini Temple', category: 'Mini Temple', link:"temple" },
+  { src: '/images/pot-cover.jpeg',         alt: 'Flower Pot',  category: 'Flower Pots', link:"flower-pot" },
+  { src: '/images/wash-vessal.jpg',   alt: 'Pedestal Vessal',  category: 'Pedestal Vessal', link:"pedestal-basin"},
   { src: '/images/wash-basin/wash-basin-1.jpg',      alt: 'Wash Basin',      category: 'Wash Basin', link:"wash-basin" },
-  { src: './images/diya/diya.jpeg',         alt: 'Diya',        category: 'Wash Vassal', link:"diya" },
+  { src: '/images/diya/diya.jpeg',         alt: 'Diya',        category: 'Wash Vassal', link:"diya" },
 ]
 
 const FILTERS = [
@@ -30,7 +30,6 @@ const FILTERS = [
 
 export default function Category() {
   const sectionRef = useRef(null)
-  // const navigate   = useNavigate()
 
   useGSAP(() => {
     const section = sectionRef.current
