@@ -29,7 +29,7 @@ const ALL_PRODUCTS = {
   },
   temple: {
     name: 'Home Temple', number: '03', color: '#4B4038',
-    tag: 'Devotional · Marble', price: '₹ 159 onwards',
+    tag: 'Devotional · Marble', price: '₹ 1,50,000 onwards',
     keyfeatures: ['Premium White Marble','Traditional Handcrafted Design','Ideal for Home & Pooja Room','Durable & Easy Maintenance','Custom Sizes Available'],
     description: 'Crafted as a sacred centrepiece for the home, each marble mandir is hand-sculpted with intricate pillars, arched entrances, and devotional motifs. A lifelong heirloom of faith and craftsmanship.',
     heroImg: '/images/mini-temple-cover.jpeg',
