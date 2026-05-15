@@ -14,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger, SplitText)
 const ALL_IMAGES = [
   { src: '/images/fountain-cover.jpeg',    alt: 'Fountain',    category: 'Fountain', link:"fountain"    },
   { src: '/images/mini-temple-cover.jpeg', alt: 'Mini Temple', category: 'Mini Temple', link:"temple" },
-  { src: '/images/pot-cover.jpeg',         alt: 'Flower Pot',  category: 'Flower Pots', link:"flower-pot" },
+  { src: '/images/pot-cover.jpeg',         alt: 'Tulsi Pot',  category: 'Flower Pots', link:"Tulsipot" },
   { src: '/images/wash-vessal.jpg',   alt: 'Pedestal Vessal',  category: 'Pedestal Vessal', link:"pedestal-basin"},
   { src: '/images/wash-basin/wash-basin-1.jpg',      alt: 'Wash Basin',      category: 'Wash Basin', link:"wash-basin" },
   { src: '/images/diya/diya.jpeg',         alt: 'Diya',        category: 'Wash Vassal', link:"diya" },
@@ -25,7 +25,7 @@ const FILTERS = [
   { label: 'Fountain',     route: '/products/fountain'    },
   { label: 'Wash Basin',  route: '/products/wash-basin'  },
   { label: 'Home temples',  route: '/products/temple'  },
-  { label: 'Flower Pots',  route: '/products/flower-pot'  },
+  { label: 'Tulsi Pots',  route: '/products/flower-pot'  },
 ]
 
 export default function Category() {
