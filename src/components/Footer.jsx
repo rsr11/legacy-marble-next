@@ -1,4 +1,3 @@
-'use client';
 import React from "react";
 import Logo from "./Logo";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";

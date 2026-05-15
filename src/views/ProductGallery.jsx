@@ -36,9 +36,9 @@ const ALL_PRODUCTS = {
     col1: ['/images/temple/temple-1.jpg', '/images/temple/temple-2.jpg', '/images/temple/temple-3.jpg'],
     col2: ['/images/temple/temple-4.jpg', '/images/temple/temple-5.jpg', '/images/temple/temple-6.jpg'],
   },
-  'flower-pot': {
-    name: 'Flower Pot', number: '04', color: '#1F6F5F',
-    tag: 'Garden · Marble', price: '₹ 1,299 onwards',
+  'Tulsipot': {
+    name: 'Tulsipot Pot', number: '04', color: '#1F6F5F',
+    tag: 'Garden · Marble', price: '₹ 6,999 onwards',
     keyfeatures: ['Durable Natural Marble','Elegant Handcrafted Design','Suitable for Indoor & Outdoor Use','Weather-Resistant','Available in Multiple Sizes'],
     description: 'Our marble flower pots combine durability with luxury aesthetics. Handcrafted from natural stone, these planters provide a sturdy and stylish base for your plants. Their elegant finish complements gardens, balconies, and interiors alike.',
     heroImg: '/images/pot-cover.jpeg',
@@ -72,9 +72,9 @@ const ALL_PRODUCTS = {
     col1: ['/images/craving-work/craving-work-1.jpg', '/images/craving-work/craving-work-2.jpg', '/images/craving-work/craving-work-3.jpg'],
     col2: ['/images/craving-work/craving-work-4.jpg', '/images/craving-work/craving-work-5.jpg', '/images/craving-work/craving-work-6.jpg'],
   },
-  'marble-slate': {
-    name: 'Marble Slate', number: '08', color: '#6984A9',
-    tag: 'Slate · Marble', price: '₹ 999 onwards',
+  'marble-slab': {
+    name: 'Marble Slab', number: '08', color: '#6984A9',
+    tag: 'Slate · Marble', price: '₹50 per sq ft onwards',
     keyfeatures: ['Premium Marble Finish','Smooth Polished Surface','Ideal for Gifting & Décor','Durable & Scratch-Resistant','Custom Engraving Available'],
     description: 'Flat-cut marble slabs polished to a smooth finish, ideal for serving boards, tabletops, wall cladding, and signage. The natural grain of each stone means no two pieces are alike.',
     heroImg: '/images/marble-slate/marble-slate-1.jpg',
@@ -92,7 +92,7 @@ const ALL_PRODUCTS = {
   },
   'pedestal-basin':{
     name: 'Pedestal Basin', number: '10', color: '#1F6F5F',
-    tag: 'Bathroom · Marble', price: '₹ 1,299 onwards',
+    tag: 'Bathroom · Marble', price: '₹ 25,000 onwards',
     keyfeatures: ['Stylish Design','Premium Marble Quality','Easy to Clean','Durable & Long-Lasting','Custom Size Available'],
     description: 'Elevate your bathroom with our elegant marble pedestal basins. These beautifully crafted pieces combine functionality with aesthetic appeal, making them a perfect addition to any modern bathroom.',
     heroImg: '/images/p-basin/p-basin-6.jpg',

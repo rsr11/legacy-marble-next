@@ -1,10 +1,8 @@
 'use client';
 
 
-
 import React, { useState } from 'react'
 import Logo from '../components/Logo.jsx'
-import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { SplitText } from 'gsap/SplitText';
 import Link from 'next/link';
@@ -16,11 +14,6 @@ const HeroSection = () => {
   
   gsap.registerPlugin(SplitText); 
  
-  useGSAP(()=>{
-   
-  })
-
-
   return (
     <div className='h-screen  bg-thrd overflow-hidden top-0 isolate w-full'>
     
