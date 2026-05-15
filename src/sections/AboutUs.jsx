@@ -138,7 +138,7 @@ const AboutUs = () => {
         {/* Image */}
         <div className="w-full sm:w-[40%] md:w-[38%] lg:w-[35%] aspect-[4/3] sm:aspect-auto overflow-hidden flex-shrink-0">
           <ImageNoise
-            src="./images/about-us.png"
+            src="/images/about-us.png"
             grainOpacity={5}
             alt="About us"
             className="w-full h-full object-cover"
