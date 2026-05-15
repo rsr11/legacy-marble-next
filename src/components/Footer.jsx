@@ -55,7 +55,7 @@ const Footer = () => {
           <h3 className="text-white text-lg font-semibold mb-4">
             Contact Us
           </h3>
-          <p className="text-sm">Email: support@example.com</p>
+          <p className="text-sm">Email: Legacymarble3@gmail.com</p>
           <p className="text-sm">Phone: +91 8949241616</p>
           <address className="text-sm" > Address : Ward No 7, byPass Road, Makrana, Rajasthan, 341505, India </address>
 
