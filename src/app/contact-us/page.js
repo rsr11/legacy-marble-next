@@ -1,4 +1,4 @@
-import ContactUs from "@/sections/ContactUs";
+import ContactUs from "../../sections/ContactUs";
 
 export default function ContactUsPage() {
   return <ContactUs />;

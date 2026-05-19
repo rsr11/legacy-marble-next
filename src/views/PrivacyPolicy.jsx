@@ -94,7 +94,7 @@ const PrivacyPolicy = () => {
         </Section>
 
         <Section title="9. Contact Us">
-          <p>Email: support@legacymarble.com</p>
+          <p>Email: Legacymarble3@gmail.com</p>
           <p>Phone: +91-8949241616</p>
         </Section>
 
