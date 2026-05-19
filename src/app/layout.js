@@ -44,6 +44,30 @@ const Nippo = localFont({
 export const metadata = {
   title: "Legacy Marble",
   description: "Custom marble products and handcrafted stone surfaces from Makrana.",
+
+  openGraph: {
+    title: "Legacy Marble",
+    description: "Custom marble products and handcrafted stone surfaces from Makrana.",
+    url: "https://legacy-marble.com",
+    siteName: "Legacy Marble",
+    images: [
+      {
+        url: "https://legacy-marble.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Legacy Marble - Custom Marble Products",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Legacy Marble",
+    description: "Custom marble products and handcrafted stone surfaces from Makrana.",
+    images: ["https://legacy-marble.com/og-image.jpg"],
+  }, 
 };
 
 export default function RootLayout({ children }) {
@@ -53,6 +77,27 @@ export default function RootLayout({ children }) {
       className={` ${Bevellier.variable} ${Nippo.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
+
+  <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+                                    "@context": "https://schema.org",
+                                    "@type": "LocalBusiness",
+                                    "name": "Legacy Marble",
+                                    "url": "https://legacy-marble.com",
+                                    "logo": "https://legacy-marble.com/logo.png",
+                                    "image": "https://legacy-marble.com/og-image.jpg",
+                                    "description": "Premium marble supplier and luxury marble collection.",
+                                    "telephone": "+91XXXXXXXXXX",
+                                    "address": {
+                                      "@type": "PostalAddress",
+                                      "addressCountry": "IN"
+                                        }
+                                         }),
+                                            }}
+                                               />
+
     </html>
   );
 }

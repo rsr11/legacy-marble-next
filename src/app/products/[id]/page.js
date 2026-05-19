@@ -1,4 +1,4 @@
-import ProductGallery from "@/views/ProductGallery";
+import ProductGallery from "../../../views/ProductGallery";
 
 // const ProductGallery = dynamic(() => import("@/views/ProductGallery.jsx"));
 
