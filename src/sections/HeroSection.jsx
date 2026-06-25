@@ -24,7 +24,7 @@ const HeroSection = () => {
       /> */}
 
         <img 
-        src="images/bgg.png" 
+        src="https://res.cloudinary.com/dkfyjxlwf/image/upload/v1782408312/bgg_eff4l8.png" 
         // autoPlay loop muted 
         className='w-full object-cover  z-0 h-full absolute' 
       />

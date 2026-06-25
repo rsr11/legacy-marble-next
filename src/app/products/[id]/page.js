@@ -1,4 +1,3 @@
-// import ProductGallery from "../../../views/ProductGallery";
 
 import dynamic from "next/dynamic";
 
