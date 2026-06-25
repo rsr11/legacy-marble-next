@@ -1,6 +1,8 @@
-import ProductGallery from "../../../views/ProductGallery";
+// import ProductGallery from "../../../views/ProductGallery";
 
-// const ProductGallery = dynamic(() => import("@/views/ProductGallery.jsx"));
+import dynamic from "next/dynamic";
+
+const ProductGallery = dynamic(() => import("../../../views/ProductGallery"));
 
 export default function ProductPage() {
   return <ProductGallery />;
