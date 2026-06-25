@@ -17,10 +17,16 @@ const HeroSection = () => {
   return (
     <div className='h-screen  bg-thrd overflow-hidden top-0 isolate w-full'>
     
-      <video 
+      {/* <video 
         src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1778050262/bg-4_qjnacw.mp4" 
         autoPlay loop muted 
         className='w-full object-cover z-0 h-full absolute' 
+      /> */}
+
+        <img 
+        src="images/bgg.png" 
+        // autoPlay loop muted 
+        className='w-full object-cover  z-0 h-full absolute' 
       />
 
   <div className='absolute inset-0 z-[1] bg-gradient-to-t from-black/70 via-black/10 to-transparent pointer-events-none' />
