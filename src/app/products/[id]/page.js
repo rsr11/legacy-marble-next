@@ -1,5 +1,5 @@
 
-import dynamic from "next/dynamic";
+import dynamic from "next/dynamic"; 
 
 const ProductGallery = dynamic(() => import("../../../views/ProductGallery"));
 
