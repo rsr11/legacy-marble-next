@@ -1,63 +1,18 @@
-export default async function sitemap() {
-  const products = [
-    {
-      slug: "diya"
-    },
-    {
-      slug: "fountain"
-    },
-    {
-      slug: "temple"
-    },
-    {
-      slug: "Tulsipot"
-    },
-    {
-      slug: "wash-basin"
-    },
-    {
-      slug: "inlay-work"
-    },
-    {
-      slug: "carving-work"
-    },
-    {
-      slug: "marble-slab"
-    },
-    {
-      slug: "mini-items"
-    },
-    {
-      slug: "pedestal-basin"
-    }
-  ];
+import { getAllPosts } from '../lib/blog';
+import { SITE } from '../lib/site';
 
-  const productUrls = products.map((product) => ({
-    url: `https://legacy-marble.com/products/${product.slug}`,
-    lastModified: new Date(),
-  }));
-
+export default function sitemap() {
+  const products = ['diya', 'fountain', 'temple', 'Tulsipot', 'wash-basin', 'inlay-work', 'carving-work', 'marble-slab', 'mini-items', 'pedestal-basin'];
+  const posts = getAllPosts();
+  const latest = posts.map((post) => post.updated || post.date).sort().at(-1);
   return [
-    {
-      url: "https://legacy-marble.com",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://legacy-marble.com/about-us",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://legacy-marble.com/contact-us",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://legacy-marble.com/privacy-policy",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://legacy-marble.com/terms-condition",
-      lastModified: new Date(),
-    },
-    ...productUrls,
+    ...['', '/about-us', '/contact-us', '/privacy-policy', '/terms-condition'].map((pathname) => ({ url: `${SITE.url}${pathname}` })),
+    ...products.map((slug) => ({ url: `${SITE.url}/products/${slug}` })),
+    { url: `${SITE.url}/blog`, ...(latest ? { lastModified: latest } : {}) },
+    ...posts.map((post) => ({
+      url: `${SITE.url}/blog/${post.slug}`,
+      lastModified: post.updated || post.date,
+      ...(post.image ? { images: [`${SITE.url}${post.image}`] } : {}),
+    })),
   ];
 }

@@ -55,3 +55,7 @@ body {
   background-size: 180px 180px;
   background-repeat: repeat;
 }
+
+.hero-title-line {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
