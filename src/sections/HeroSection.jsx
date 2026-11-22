@@ -113,16 +113,18 @@ export default function HeroSection() {
   );
 
   return (
-    <section
-  ref={heroRef}
-  className="relative isolate flex min-h-[100svh] w-full flex-col overflow-hidden bg-[#120D0A] text-white"
->
-      {/* Luxury dark background */}
-      <div
-        className="absolute inset-0 -z-30 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/images/dark-marble.webp')",
-        }}
+    <div className='h-screen  bg-thrd overflow-hidden top-0 isolate w-full'>
+    
+      {/* <video 
+        src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1778050262/bg-4_qjnacw.mp4" 
+        autoPlay loop muted 
+        className='w-full object-cover z-0 h-full absolute' 
+      /> */}
+
+        <img 
+        src="images/bgg.png" 
+        // autoPlay loop muted 
+        className='w-full object-cover  z-0 h-full absolute' 
       />
 
       {/* base dark overlay */}
