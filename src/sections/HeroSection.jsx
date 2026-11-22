@@ -113,90 +113,18 @@ export default function HeroSection() {
   );
 
   return (
-    <section
-      ref={heroRef}
-      className="relative isolate flex min-h-screen w-full flex-col overflow-hidden bg-[#120D0A] text-white"
-    >
-      {/* Luxury dark background */}
-      <div
-        className="absolute inset-0 -z-30 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/images/dark-marble.webp')",
-        }}
-      />
+    <div className='h-screen  bg-thrd overflow-hidden top-0 isolate w-full'>
+    
+      {/* <video 
+        src="https://res.cloudinary.com/dkfyjxlwf/video/upload/v1778050262/bg-4_qjnacw.mp4" 
+        autoPlay loop muted 
+        className='w-full object-cover z-0 h-full absolute' 
+      /> */}
 
-      {/* base dark overlay */}
-      <div className="pointer-events-none absolute inset-0 -z-20 bg-[#0D0907]/55" />
-
-      {/* left readability gradient */}
-      <div className="pointer-events-none absolute inset-0 -z-20 bg-gradient-to-r from-[#0D0907]/95 via-[#0D0907]/72 to-transparent" />
-
-      {/* subtle bottom fade */}
-      <div className="pointer-events-none absolute inset-0 -z-20 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
-
-      {/* top-right navbar */}
-      <nav className="hero-nav relative z-30 flex w-full items-center justify-between px-6 py-6 md:px-12 lg:px-20">
-        <Logo />
-
-        <ul className="ml-auto hidden items-center gap-8 rounded-full border border-white/15 bg-black/15 px-8 py-3 font-nippo text-sm text-white/95 backdrop-blur-xl md:flex lg:text-base">
-          <li>
-            <Link
-              href="/products/diya"
-              className="border-b border-[#D9A441] pb-1 text-[#F1C878] transition-colors"
-            >
-              Products
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/about-us"
-              className="transition-colors hover:text-[#F1C878]"
-            >
-              About Us
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/contact-us"
-              className="transition-colors hover:text-[#F1C878]"
-            >
-              Contact Us
-            </Link>
-          </li>
-        </ul>
-
-        <button
-          type="button"
-          aria-label="Open navigation menu"
-          aria-expanded={menuOpen}
-          onClick={() => setMenuOpen(true)}
-          className="ml-auto flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-black/20 text-white backdrop-blur-lg md:hidden"
-        >
-          <Menu size={22} />
-        </button>
-      </nav>
-
-      <MobileNav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-
-      {/* temple glow behind image */}
-      <div
-        className="
-          pointer-events-none absolute
-          right-[3%] top-[18%] z-[1]
-          hidden h-[52%] w-[36%]
-          rounded-full bg-[#D9A441]/18
-          blur-[120px] lg:block
-        "
-      />
-
-      {/* decorative thin arc */}
-      <div
-        className="
-          pointer-events-none absolute
-          right-[6%] top-[8%] z-[2]
-          hidden h-[78%] w-[50%]
-          rounded-[50%] border border-[#D9A441]/35 lg:block
-        "
+        <img 
+        src="images/bgg.png" 
+        // autoPlay loop muted 
+        className='w-full object-cover  z-0 h-full absolute' 
       />
 
       {/* temple image */}
