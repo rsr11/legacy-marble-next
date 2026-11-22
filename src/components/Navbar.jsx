@@ -12,6 +12,7 @@ import Link from 'next/link'
 
 const NAV_ITEMS = [{name:'Products', link: '/products/diya'},
                    {name:'About Us', link: '/about-us'},
+                   {name:'Journal', link: '/blog'},
                   //  {name:'Company', link: '/company'},
                    {name:'Contact Us', link: '/contact-us'}]
 

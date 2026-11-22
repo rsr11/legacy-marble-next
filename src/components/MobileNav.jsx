@@ -7,6 +7,7 @@ import gsap from 'gsap'
 const NAV_LINKS = [
   { label: 'Products',   to: '/products/diya' },
   { label: 'About Us',  to: '/about-us'       },
+  { label: 'Journal',   to: '/blog'           },
   { label: 'Contact Us',to: '/contact-us'     },
 ]
 

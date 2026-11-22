@@ -13,8 +13,8 @@ const Footer = () => {
         <div>
           <Logo />
           <p className="mt-4 text-sm leading-6">
-            We provide high-quality products and services with a focus on user
-            experience and performance.
+            Marble temples, water fountains and custom stonework from
+            Makrana, Rajasthan.
           </p>
         </div>
 
@@ -26,8 +26,8 @@ const Footer = () => {
           <ul className="space-y-2 text-sm">
             <li className="hover:text-white cursor-pointer"><Link  href={"/"}>Home</Link></li>
             <li className="hover:text-white cursor-pointer"><Link href={"/products/diya"} >Products</Link></li>
-            <li className="hover:text-white cursor-pointer"><Link href={"#team-section"}>Team</Link></li>
-            <li className="hover:text-white cursor-pointer"><Link href="/">Sitemap</Link></li>
+            <li className="hover:text-white cursor-pointer"><Link href="/blog">Journal & Guides</Link></li>
+            <li className="hover:text-white cursor-pointer"><a href="/sitemap.xml">Sitemap</a></li>
           </ul>
         </div>
 
@@ -61,9 +61,9 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className="flex gap-4 mt-4 text-xl">
-            <a href="https://www.instagram.com/legacy_marble/" target="_blank"><FaInstagram className="hover:text-white cursor-pointer" /></a>
-            <a href="https://wa.me/918949241616" target="_blank"><FaWhatsapp className="hover:text-white cursor-pointer" /></a>
-            <a href=""><BiLogoGmail className="hover:text-white cursor-pointer" /></a>
+            <a href="https://www.instagram.com/legacy_marble/" target="_blank" rel="noopener noreferrer" aria-label="Legacy Marble on Instagram"><FaInstagram className="hover:text-white cursor-pointer" /></a>
+            <a href="https://wa.me/918949241616" target="_blank" rel="noopener noreferrer" aria-label="Message Legacy Marble on WhatsApp"><FaWhatsapp className="hover:text-white cursor-pointer" /></a>
+            <a href="mailto:Legacymarble3@gmail.com" aria-label="Email Legacy Marble"><BiLogoGmail className="hover:text-white cursor-pointer" /></a>
           </div>
         </div>
       </div>
@@ -73,11 +73,10 @@ const Footer = () => {
 
       {/* Bottom */}
       <div className="text-center text-sm">
-        © {new Date().getFullYear()} Your Company. All rights reserved.
+        © {new Date().getFullYear()} Legacy Marble. All rights reserved.
       </div>
     </footer>
   );
 };
 
 export default Footer;
-  
