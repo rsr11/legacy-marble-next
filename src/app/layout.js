@@ -1,6 +1,17 @@
 import "./globals.css";
+import { SITE } from '../lib/site';
 
 import localFont from "next/font/local";
+import { Cormorant_Garamond } from "next/font/google";
+
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-cormorant",
+  display: "swap",
+});
 
 const Bevellier = localFont({
   src: [
@@ -42,6 +53,7 @@ const Nippo = localFont({
 
 
 export const metadata = {
+  metadataBase: new URL(SITE.url),
   title: "Legacy Marble",
   description: "Custom marble products and handcrafted stone surfaces from Makrana.",
 
@@ -52,7 +64,7 @@ export const metadata = {
     siteName: "Legacy Marble",
     images: [
       {
-        url: "https://legacy-marble.com/og-image.jpg",
+        url: `${SITE.url}${SITE.defaultOgImage}`,
         width: 1200,
         height: 630,
         alt: "Legacy Marble - Custom Marble Products",
@@ -66,7 +78,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Legacy Marble",
     description: "Custom marble products and handcrafted stone surfaces from Makrana.",
-    images: ["https://legacy-marble.com/og-image.jpg"],
+    images: [`${SITE.url}${SITE.defaultOgImage}`],
   }, 
 };
 
@@ -74,29 +86,33 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={` ${Bevellier.variable} ${Nippo.variable} h-full antialiased`}
+      className={` ${Bevellier.variable} ${Nippo.variable} ${cormorant.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
-
-  <script
+      <body className="min-h-full flex flex-col">{children}
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
                                     "@context": "https://schema.org",
                                     "@type": "LocalBusiness",
                                     "name": "Legacy Marble",
-                                    "url": "https://legacy-marble.com",
-                                    "logo": "https://legacy-marble.com/logo.png",
-                                    "image": "https://legacy-marble.com/og-image.jpg",
-                                    "description": "Premium marble supplier and luxury marble collection.",
-                                    "telephone": "+91XXXXXXXXXX",
+                                    "url": SITE.url,
+                                    "logo": `${SITE.url}${SITE.logo}`,
+                                    "image": `${SITE.url}${SITE.defaultOgImage}`,
+                                    "description": "Custom marble products and handcrafted stone surfaces from Makrana.",
+                                    "telephone": "+918949241616",
                                     "address": {
                                       "@type": "PostalAddress",
+                                      "streetAddress": "Ward No 7, Bypass Road",
+                                      "addressLocality": "Makrana",
+                                      "addressRegion": "Rajasthan",
+                                      "postalCode": "341505",
                                       "addressCountry": "IN"
                                         }
                                          }),
                                             }}
                                                />
+      </body>
 
     </html>
   );
